@@ -48,6 +48,14 @@ const personalMovieDB = {
             return console.log(personalMovieDB);
         }
     },
+    
+    toggleVisibleMyDB: function () {
+        if (personalMovieDB.privat) {
+            personalMovieDB.privat = false;
+        } else {
+            personalMovieDB.privat = true;
+        }
+    },
 
     writeYpurGenres: function() {
         for (let i = 1; i <= 3; i++) {
